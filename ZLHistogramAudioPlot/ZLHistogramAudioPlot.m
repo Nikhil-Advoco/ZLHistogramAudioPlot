@@ -124,9 +124,9 @@ const NSInteger kFrameInterval = 1; // Alter this to draw more or less often
 - (void)dealloc {
     [self.displaylink invalidate];
     self.displaylink = nil;
-    if (plotData) {
-        free(plotData);
-    }
+//     if (plotData) {
+//         free(plotData);
+//     }
     [self freeBuffersIfNeeded];
 }
 
